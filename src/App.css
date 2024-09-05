@@ -1,0 +1,107 @@
+/* App.css */
+
+/* General container styles */
+.container {
+  display: flex;
+  width: 100%;
+  height: 100vh;
+  background-color: #1a1a1a;
+  color: white;
+}
+
+.empty-left {
+  flex: 1;
+  /* Left side is empty */
+}
+
+/* Right widgets */
+.right-widgets {
+  flex: 2;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  padding: 20px;
+}
+
+/* First widget (Tabs) */
+.first-widget {
+  background-color: #2a2a2a;
+  padding: 20px;
+  border-radius: 10px;
+}
+
+.tabs {
+  display: flex;
+  gap: 10px;
+}
+
+.tabs button {
+  background-color: #444;
+  color: white;
+  border: none;
+  padding: 10px;
+  cursor: pointer;
+  border-radius: 5px;
+  transition: background-color 0.3s;
+}
+
+.tabs button.active {
+  background-color: #555;
+}
+
+.tab-content {
+  margin-top: 20px;
+  font-size: 14px;
+}
+
+/* Second widget (Gallery) */
+.second-widget {
+  background-color: #2a2a2a;
+  padding: 20px;
+  border-radius: 10px;
+}
+
+.gallery-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 10px;
+}
+
+.gallery-nav {
+  background-color: #444;
+  color: white;
+  border: none;
+  padding: 5px 10px;
+  cursor: pointer;
+  border-radius: 5px;
+}
+
+.gallery-images {
+  display: flex;
+  gap: 10px;
+  overflow-x: auto;
+  margin-bottom: 10px;
+}
+
+.image img {
+  width: 100px;
+  height: 100px;
+  object-fit: cover;
+}
+
+.add-image {
+  background-color: #444;
+  color: white;
+  border: none;
+  padding: 10px;
+  cursor: pointer;
+  border-radius: 5px;
+}
+
+/* Responsive layout */
+@media (max-width: 768px) {
+  .right-widgets {
+    flex: 1;
+  }
+}
